@@ -1,3 +1,9 @@
+--[[
+➕️ Library modded by dreamy9x9x
+🔴 Original Owner : Redz
+]]
+
+
 local MarketplaceService = game:GetService("MarketplaceService")
 local UserInputService = game:GetService("UserInputService")
 local TweenService = game:GetService("TweenService")
@@ -13,8 +19,8 @@ local redzlib = {
 		NebulaPurple = {
 			["Color Hub 1"] = ColorSequence.new({
 				ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)),
-				ColorSequenceKeypoint.new(0.50, Color3.fromRGB(42, 0, 53)),
-				ColorSequenceKeypoint.new(1.00, Color3.fromRGB(75, 21, 99))
+				ColorSequenceKeypoint.new(0.50, Color3.fromRGB(100, 0, 0)),
+				ColorSequenceKeypoint.new(1.00, Color3.fromRGB(190, 0, 0))
 			}),
 			["Color Hub 2"] = Color3.fromRGB(0, 0, 0),
 			["Color Stroke"] = Color3.fromRGB(40, 40, 40),
@@ -1580,8 +1586,8 @@ function redzlib:MakeWindow(Configs)
 	local Window, FirstTab = {}, false
 	function Window:CloseBtn()
 		local Dialog = Window:Dialog({
-			Title = "Close",
-			Text = "You Want Close Ui?",
+			Title = "Destroying Script Hub",
+			Text = "Do you wanna destroy the window?",
 			Options = {
 				{"Confirm", function()
 					ScreenGui:Destroy()
